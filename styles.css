@@ -1,0 +1,205 @@
+/* Estilo general para todo */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    padding: 10px;
+}
+
+/* HEADER COLORIDO */
+.header_memes{
+    background: linear-gradient(to right, #ff00cc, #3333ff, #00ffff);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #ffcc00;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.header_memes h1{
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Menú horizontal que se adapta */
+.header_memes nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.header_memes nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.header_memes nav ul li a:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* MAIN */
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* TEXTOS EN SECCIONES */
+main h2{
+    color: #3333ff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main p{
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* RESPONSIVE: Celulares */
+@media (max-width: 600px){
+    .header_memes h1{
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        font-size: 2em;
+    }
+
+    .header-memes nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main{
+        padding: 25px 15px;
+    }
+
+    main h2{
+        font-size: 1.5em;
+    }
+
+    main p{
+        font-size: 1em;
+    }
+}
+
+#memes{
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 10px;
+}
+
+#memes h2{
+    color: #ff00cc;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.memes-instagram{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.instagram-media{
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 280px;
+}
+
+.galeria-videos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 25px;
+    justify-items: center;
+}
+
+.contacto-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+}
+
+.contacto-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.contacto-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.contactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contacto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: #333;
+}
+
+.contacto-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.instagram img { filter: hue-rotate(290deg); }
+.email img { filter: hue-rotate(0deg); }
+.whatsapp img { filter: hue-rotate(120deg); }
+
+#verMasBtn {
+    padding: 10px 25px;
+    font-size: 1em;
+    background-color: #ff00cc;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#verMasBtn:hover {
+    background-color: #e600b8;
+    transform: scale(1.1) rotate(-1deg);
+}
+
